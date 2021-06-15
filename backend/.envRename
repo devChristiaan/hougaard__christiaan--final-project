@@ -1,5 +1,0 @@
-PORT=3000
-JWT_SECRET=ajkdfha784q4uh0fhf70w9qrfp94ffi403rk
-SALT_ROUNDS=10
-DB_USERS_LOCATION=./data/dbUsers.json
-DB_ENTRIES_LOCATION=./data/dbEntries.json
