@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
 import Logo from "../shared/logo"
-// import { Form, FormGroup, Col, Input, Label, Button, Container, CardBody, Card, CardText } from 'reactstrap'
-
-
 
 const Contact = () => {
     const [name, setName] = useState("")
@@ -39,7 +36,7 @@ const Contact = () => {
             <div className="line"></div>
         </section>
         <section className='grid-graphic-resume'>
-            <img src="/code.svg" alt="Laptop Image" className="wireframe"/>
+            <img src="/code.svg" alt="Laptop" className="wireframe"/>
         </section>
         <section className="grid-journey block-left">
             <form onSubmit={formSubmit} name="contactForm">

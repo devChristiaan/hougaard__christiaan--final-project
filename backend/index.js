@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 9000
 
 var corsOptions = {
   origin: '*',
-  optionsSuccessStatus: 200
+  methods: ['GET', 'PUT', 'POST']
 }
 
 app.use(cors(corsOptions))

@@ -1,15 +1,14 @@
 import React, { useState } from 'react'
 import { useHistory, useLocation } from 'react-router-dom'
-import Logo from "../shared/logo"
 
 const Login = () => {
     let history = useHistory();
     let location = useLocation();
-    const [email, setEmail] = useState("")
+    const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
     const [auth, setAuth] = useState(true)
 
-    const loginSubmit = async event => {
+    const createUser = async event => {
         
         event.preventDefault()
         const response = await fetch('http://localhost:4000/auth', {
@@ -20,7 +19,7 @@ const Login = () => {
                 'Access-Control-Allow-Origin': '*',
                 'Access-Control-Allow-Methods': 'POST'
               },
-            body: JSON.stringify({email, password})
+            body: JSON.stringify({username, password})
         })
         const payload = await response.json()
         if (response.status >= 400) {
@@ -35,16 +34,12 @@ const Login = () => {
 
     return (
       <>
-        <Logo />
-        {!auth && 
-            <p>Invalid credentials, please try again</p>
-        }
-        <form onSubmit={loginSubmit}>
-            <label htmlFor="emailEntry">Email</label>
-                <input type="email" name="email" id="emailEntry" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)}/>
+        <form onSubmit={createUser}>
+            <label htmlFor="usernameEntry">Username</label>
+                <input type="text" name="username" id="usernameEntry" placeholder="Username" value={username} onChange={e => setUsername(e.target.value)}/>
             <label htmlFor="passwordEntry">Password</label>
                 <input type="password" name="password" id="passwordEntry" placeholder="Valid password" onChange={e => setPassword(e.target.value)}/>
-            <button>Sign in</button>
+            <button>Create User</button>
         </form>
       </>
     )

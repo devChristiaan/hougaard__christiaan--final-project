@@ -28,7 +28,7 @@ const Listings = () => {
         getData()
     }, [token])
     return (
-        <div></div>
+        <div>test</div>
         // <Container>
         //     <Row>
         //         <h1>Listings for user: {user}</h1>

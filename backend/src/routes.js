@@ -25,7 +25,6 @@ const saltRounds = parseInt(process.env.SALT_ROUNDS)
 router.post('/contact_form/entries', validationObj , async (req, res, next) => {
   //Create ID
   let message = createID(req.body)
-  console.log(message);
   //Designate which DB to use
   let db = 'dbEntries'
   try{
@@ -67,6 +66,7 @@ router.post('/auth', validationAuthUser , async (req, res, next) =>{
   const password = req.body.password
   //Designate which DB to use
   const db = 'dbUsers'
+  console.log(email, password);
   try{
     ///Find User in DB
     let user = await findUser(email, password, db)
@@ -76,7 +76,7 @@ router.post('/auth', validationAuthUser , async (req, res, next) =>{
       return res.status(400).json({message: "incorrect credentials provided"})
     } else {
       //User Authenticated - Send Token
-      const token = jwt.sign({email}, process.env.JWT_SECRET, {expiresIn: '10m'})
+      const token = jwt.sign({email}, process.env.JWT_SECRET, {expiresIn: '30m'})
       return res.status(200).json({token})
    }
   } 
