@@ -16,7 +16,9 @@ const Contact = () => {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Methods': 'POST'
               },
             body: JSON.stringify({name, email, phoneNumber, content})
         })
@@ -37,18 +39,18 @@ const Contact = () => {
             <div className="line"></div>
         </section>
         <section className='grid-graphic-resume'>
-            <img src="/code.svg" alt="Laptop Image" class="wireframe"/>
+            <img src="/code.svg" alt="Laptop Image" className="wireframe"/>
         </section>
         <section className="grid-journey block-left">
             <form onSubmit={formSubmit} name="contactForm">
-                <label for="name">Full Name</label><span className="error-message" id='nMessage'></span>
-                <input type="name" name="name" id="nameEntry" required value={name} onChange={e => setName(e.target.value)}/>
-                <label for="email">Email</label><span className="error-message" id='eMessage'></span>
-                <input type="email" name="email" id="emailEntry" required value={email} onChange={e => setEmail(e.target.value) }/>
-                <label for="name">Phone Number</label><span className="error-message" id='eMessage'></span>
-                <input type="phone" name="phone" id="phoneEntry" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)}/>
-                <label for="message">Message</label><span className="error-message" id='mMessage'></span>
-                <input type="textarea" name="text" id="messageEntry" required value={content} onChange={e => setContent(e.target.value)}/>
+                <label htmlFor="name">Full Name</label><span className="error-message" id='nMessage'></span>
+                    <input type="name" name="name" id="nameEntry" required value={name} onChange={e => setName(e.target.value)}/>
+                <label htmlFor="email">Email</label><span className="error-message" id='eMessage'></span>
+                    <input type="email" name="email" id="emailEntry" required value={email} onChange={e => setEmail(e.target.value) }/>
+                <label htmlFor="name">Phone Number</label><span className="error-message" id='eMessage'></span>
+                    <input type="phone" name="phone" id="phoneEntry" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)}/>
+                <label htmlFor="message">Message</label><span className="error-message" id='mMessage'></span>
+                    <input type="textarea" name="text" id="messageEntry" required value={content} onChange={e => setContent(e.target.value)}/>
                 <button type="submit" value="Send" className="form-btn">Send</button>
             </form>
         </section>

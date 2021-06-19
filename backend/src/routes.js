@@ -25,6 +25,7 @@ const saltRounds = parseInt(process.env.SALT_ROUNDS)
 router.post('/contact_form/entries', validationObj , async (req, res, next) => {
   //Create ID
   let message = createID(req.body)
+  console.log(message);
   //Designate which DB to use
   let db = 'dbEntries'
   try{
