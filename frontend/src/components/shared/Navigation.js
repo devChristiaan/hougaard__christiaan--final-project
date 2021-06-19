@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Container } from 'reactstrap'
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink, Container } from 'reactstrap'
 import { NavLink as RouteLink } from 'react-router-dom'
 
 
@@ -10,7 +10,6 @@ const Navigation = () => {
     return (
         <Navbar className="grid-nav">
             <Container>
-            <NavbarBrand href="">Example Portfolio Site</NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="nav-bar" navbar>
@@ -18,7 +17,7 @@ const Navigation = () => {
                         <NavLink tag={RouteLink} to="/">Home</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink tag={RouteLink} to="/about">About Me</NavLink>
+                        <NavLink tag={RouteLink} to="/resume">Resume</NavLink>
                     </NavItem>
                     <NavItem>
                        <NavLink tag={RouteLink} to="/contact">Contact Us</NavLink>
