@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
-import { Form, FormGroup, Col, Input, Label, Button, Container, CardBody, Card, CardText } from 'reactstrap'
-
-
+import Logo from "../shared/logo"
 
 const Contact = () => {
     const [name, setName] = useState("")
@@ -15,7 +13,9 @@ const Contact = () => {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Methods': 'POST'
               },
             body: JSON.stringify({name, email, phoneNumber, content})
         })
@@ -28,45 +28,30 @@ const Contact = () => {
     }
 
     return (
-        <Container>
-            <Card className="text-white bg-secondary my-5 py-4 text-center">
-                <CardBody>
-                    <CardText className="text-white m-0">Use form to reach me, I'll get back to you within 24 hours!</CardText>
-                </CardBody>
-            </Card>
-            <Form className="my-5" onSubmit={formSubmit}>
-                <FormGroup row>
-                    <Label for="emailEntry" sm={2}>Email</Label>
-                    <Col sm={10}>
-                    <Input type="email" name="email" id="emailEntry" placeholder="Enter email to contact"  required value={email} onChange={e => setEmail(e.target.value) }/>
-                    </Col>
-                </FormGroup>
-                <FormGroup row>
-                    <Label for="phoneEntry" sm={2}>Phone Number</Label>
-                    <Col sm={10}>
-                    <Input type="phone" name="phone" id="phoneEntry" placeholder="Enter phone number" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)}/>
-                    </Col>
-                </FormGroup>
-                <FormGroup row>
-                    <Label for="nameEntry" sm={2}>Full Name</Label>
-                    <Col sm={10}>
-                    <Input type="name" name="name" id="nameEntry" placeholder="Enter your full name" required value={name} onChange={e => setName(e.target.value)}/>
-                    </Col>
-                </FormGroup>
-
-                <FormGroup row>
-                    <Label for="messageEntry" sm={2}>Message</Label>
-                    <Col sm={10}>
-                    <Input type="textarea" name="text" id="messageEntry" required value={content} onChange={e => setContent(e.target.value)}/>
-                    </Col>
-                </FormGroup>
-                <FormGroup check row>
-                    <Col sm={{ size: 10, offset: 2 }}>
-                    <Button color="success">Submit</Button>
-                    </Col>
-                </FormGroup>
-            </Form>
-        </Container>
+    <>
+        <Logo />
+        <section className='grid-title-resume flex'>
+            <div className="line"></div>
+            <h1 className="lift">Get In Touch</h1>
+            <div className="line"></div>
+        </section>
+        <section className='grid-graphic-resume'>
+            <img src="/code.svg" alt="Laptop" className="wireframe"/>
+        </section>
+        <section className="grid-journey block-left">
+            <form onSubmit={formSubmit} name="contactForm">
+                <label htmlFor="name">Full Name</label><span className="error-message" id='nMessage'></span>
+                    <input type="name" name="name" id="nameEntry" required value={name} onChange={e => setName(e.target.value)}/>
+                <label htmlFor="email">Email</label><span className="error-message" id='eMessage'></span>
+                    <input type="email" name="email" id="emailEntry" required value={email} onChange={e => setEmail(e.target.value) }/>
+                <label htmlFor="name">Phone Number</label><span className="error-message" id='eMessage'></span>
+                    <input type="phone" name="phone" id="phoneEntry" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)}/>
+                <label htmlFor="message">Message</label><span className="error-message" id='mMessage'></span>
+                    <input type="textarea" name="text" id="messageEntry" required value={content} onChange={e => setContent(e.target.value)}/>
+                <button type="submit" value="Send" className="form-btn">Send</button>
+            </form>
+        </section>
+    </>
       )
     }
 

@@ -1,6 +1,7 @@
 import express from 'express'
 import routes from './src/routes.js'
 import errorHandler from './errorHandler/errorHandler.js'
+import cors from 'cors'
 //Config local env
 import dotenv from 'dotenv'
 dotenv.config()
@@ -9,6 +10,12 @@ dotenv.config()
 const app = express()
 const PORT = process.env.PORT || 9000
 
+var corsOptions = {
+  origin: '*',
+  methods: ['GET', 'PUT', 'POST']
+}
+
+app.use(cors(corsOptions))
 app.use(express.json())
 
 app.use('/', routes)
