@@ -4,8 +4,8 @@ import React from 'react'
 
 const Navigation = () => {
     return (
-    <nav class="grid-nav">
-        <ul class="nav-bar">
+    <nav className="grid-nav">
+        <ul className="nav-bar">
             <li><a href="/">Home</a></li>
             <li><a href="/resume">Resume</a></li>
             <li><a href="/portfolio">Portfolio</a></li>
