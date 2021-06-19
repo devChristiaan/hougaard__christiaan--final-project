@@ -2,7 +2,7 @@ import React from 'react'
 
 const Resume = () => {
     return (
-    <div>
+    <>
         <section className="grid-logo">
             <img src="/logo.svg" alt="Logo" className="logo" />
         </section>
@@ -24,7 +24,7 @@ const Resume = () => {
             <h2>The Home Depot</h2>
             <h3>Millworks and Flooring Sales Associate</h3>
         </section>
-    </div>
+    </>
     )
 }
 

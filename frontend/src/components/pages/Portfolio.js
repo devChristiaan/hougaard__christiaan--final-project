@@ -2,7 +2,7 @@ import React from 'react'
 
 const Portfolio = () => {
     return (
-    <div>
+    <>
         <section className="grid-logo">
             <img src="/logo.svg" alt="Logo" className="logo"/>
         </section>
@@ -24,7 +24,7 @@ const Portfolio = () => {
             <h2>Project 1</h2>
             <h3>Short description of project</h3>
         </section>
-    </div>
+    </>
     )
 }
 
