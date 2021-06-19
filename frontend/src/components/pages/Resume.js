@@ -3,7 +3,7 @@ import { Container} from 'reactstrap'
 
 const Resume = () => {
     return (
-    <Container>
+    <div className="grid bg">
         <section class="grid-logo">
             <img src="/logo.svg" alt="Logo Image" class="logo" />
         </section>
@@ -25,7 +25,7 @@ const Resume = () => {
             <h2>The Home Depot</h2>
             <h3>Millworks and Flooring Sales Associate</h3>
         </section>
-    </Container>
+    </div>
     )
 }
 
