@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="190" height="224" viewBox="0 0 190 224">
+  <defs>
+    <path id="path-2" fill-rule="evenodd" d="M0 103.64427185v98.77470398h190v-98.77470398H0z"/>
+    <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+      <rect width="190" height="224" x="0" y="0" fill="black"/>
+      <use fill="white" xlink:href="#path-2"/>
+    </mask>
+  </defs>
+  <g>
+    <g>
+      <rect width="190" height="98.775" x="0" y="103.644" fill="none" rx="0" ry="0"/>
+      <g>
+        <use fill="none" xlink:href="#path-2"/>
+        <g mask="url(#mask-3)">
+          <path fill="rgb(0,0,0)" fill-rule="evenodd" d="M3.92736816 195.31661987h19.46704102c-1.43798828-.33621216-2.52038574-1.54095459-2.52038574-2.94180298v-85.69067382c0-1.6670227 1.51525879-3.03987122 3.35534668-3.03987122h140.6599121c1.8400879 0 3.35534669 1.37284851 3.35534669 3.03987122v85.67663574c0 1.41488647-1.06689453 2.60562134-2.52038575 2.9418335h20.34838868c2.16467285 0 3.92736816 1.59698486 3.92736816 3.5581665 0 1.96121216-1.76269531 3.55819702-3.92736816 3.55819702H3.92736816C1.76269531 202.41897583 0 200.82199097 0 198.86077881c0-1.9472046 1.76269531-3.54415894 3.92736816-3.54415894zm22.68310547-86.90942383h136.3614502v83.09906006H26.61047363v-83.09906006zm62.86950684 88.24023438h11.04003906c1.03601074 0 1.88647461.7704773 1.88647461 1.70904541 0 .93856812-.85046387 1.70904541-1.8864746 1.70904541H89.47998046c-1.03588867 0-1.88635254-.7704773-1.88635254-1.70904541 0-.95257568.85046387-1.70904541 1.88635254-1.70904541z"/>
+        </g>
+      </g>
+    </g>
+    <text font-size="0" style="white-space:pre" opacity=".79">
+      <tspan x="68.227" y="175.893" fill="rgb(0,143,245)" font-family="Javanese Text" font-size="75" font-weight="400" style="white-space:pre;text-transform:none" letter-spacing="3.515">H</tspan>
+    </text>
+    <text font-size="0" style="white-space:pre" opacity=".79">
+      <tspan x="78" y="69" fill="rgb(0,143,245)" font-family="Javanese Text" font-size="55" font-weight="400" style="white-space:pre;text-transform:none" letter-spacing="2.578">C</tspan>
+    </text>
+  </g>
+</svg>
