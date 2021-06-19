@@ -13,7 +13,7 @@ const Resume = () => {
             <div class="line"></div>
         </section>
         <section class='grid-graphic-resume'>
-            <img src="./svg/Wireframe.svg" alt="Laptop Image" class="wireframe" />
+            <img src="/Wireframe.svg" alt="Laptop Image" class="wireframe" />
         </section>
         <section class="grid-journey block-left">
             <h2>TD Canada Trust</h2>

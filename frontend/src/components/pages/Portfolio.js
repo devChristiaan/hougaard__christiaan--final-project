@@ -5,7 +5,7 @@ const Portfolio = () => {
     return (
     <Container>
         <section class="grid-logo">
-            <img src="./svg/logo.svg" alt="Logo Image" class="logo"/>
+            <img src="/logo.svg" alt="Logo Image" class="logo"/>
         </section>
         <section class='grid-title-resume flex'>
             <div class="line"></div>
@@ -13,7 +13,7 @@ const Portfolio = () => {
             <div class="line"></div>
         </section>
         <section class='grid-graphic-resume'>
-            <img src="./svg/finance.svg" alt="Fiance Computer" class="wireframe"/>
+            <img src="/finance.svg" alt="Fiance Computer" class="wireframe"/>
         </section>
         <section class="grid-journey block-left">
             <h2>Project 1</h2>
