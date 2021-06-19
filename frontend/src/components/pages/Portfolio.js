@@ -1,9 +1,8 @@
 import React from 'react'
-import { Container} from 'reactstrap'
 
 const Portfolio = () => {
     return (
-    <Container>
+    <div>
         <section class="grid-logo">
             <img src="/logo.svg" alt="Logo Image" class="logo"/>
         </section>
@@ -25,7 +24,7 @@ const Portfolio = () => {
             <h2>Project 1</h2>
             <h3>Short description of project</h3>
         </section>
-    </Container>
+    </div>
     )
 }
 

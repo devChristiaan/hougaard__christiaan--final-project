@@ -1,9 +1,8 @@
 import React from 'react'
-import { Container } from 'reactstrap'
 
 const Home = () => {
     return(
-        <div className="grid bg">
+        <div>
             <section class="grid-logo">
                 <img src="/logo.svg" alt="Logo Image" class="logo" />
             </section>

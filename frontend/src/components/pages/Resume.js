@@ -3,7 +3,7 @@ import { Container} from 'reactstrap'
 
 const Resume = () => {
     return (
-    <div className="grid bg">
+    <div>
         <section class="grid-logo">
             <img src="/logo.svg" alt="Logo Image" class="logo" />
         </section>
