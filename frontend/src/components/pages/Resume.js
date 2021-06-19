@@ -1,11 +1,10 @@
 import React from 'react'
+import Logo from '../shared/logo'
 
 const Resume = () => {
     return (
     <>
-        <section className="grid-logo">
-            <img src="/logo.svg" alt="Logo" className="logo" />
-        </section>
+       <Logo />
         <section className='grid-title-resume flex'>
             <div className="line"></div>
             <h1 className="lift">My Career Journey</h1>

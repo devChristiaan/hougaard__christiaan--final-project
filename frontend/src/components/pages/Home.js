@@ -1,11 +1,10 @@
 import React from 'react'
+import Logo from '../shared/logo'
 
 const Home = () => {
     return(
     <>
-        <section className="grid-logo">
-            <img src="/logo.svg" alt="Logo" className="logo" />
-        </section>
+        <Logo />
         <section className='grid-graphic-resume'>
             <img src="/laptop.svg" alt="Laptop Illustration" className="laptop"/>
         </section>
