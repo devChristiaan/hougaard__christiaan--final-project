@@ -8,12 +8,12 @@ const Navigation = () => {
     const toggle = () => setIsOpen(!isOpen)
 
     return (
-        <Navbar dark color="dark" expand="md" fixed="top">
+        <Navbar className="grid-nav">
             <Container>
             <NavbarBrand href="">Example Portfolio Site</NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
-                <Nav className="ml-auto" navbar>
+                <Nav className="nav-bar" navbar>
                     <NavItem>
                         <NavLink tag={RouteLink} to="/">Home</NavLink>
                     </NavItem>
