@@ -1,21 +1,20 @@
 import React from 'react'
-import { Container} from 'reactstrap'
 
 const Resume = () => {
     return (
     <div>
-        <section class="grid-logo">
-            <img src="/logo.svg" alt="Logo Image" class="logo" />
+        <section className="grid-logo">
+            <img src="/logo.svg" alt="Logo" className="logo" />
         </section>
-        <section class='grid-title-resume flex'>
-            <div class="line"></div>
-            <h1 class="lift">My Career Journey</h1>
-            <div class="line"></div>
+        <section className='grid-title-resume flex'>
+            <div className="line"></div>
+            <h1 className="lift">My Career Journey</h1>
+            <div className="line"></div>
         </section>
-        <section class='grid-graphic-resume'>
-            <img src="/Wireframe.svg" alt="Laptop Image" class="wireframe" />
+        <section className='grid-graphic-resume'>
+            <img src="/Wireframe.svg" alt="Laptop" className="wireframe" />
         </section>
-        <section class="grid-journey block-left">
+        <section className="grid-journey block-left">
             <h2>TD Canada Trust</h2>
             <h3>Lead Customer Experience Associate</h3>
             <h2>Crystal Music</h2>
