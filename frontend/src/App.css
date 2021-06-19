@@ -106,7 +106,7 @@
  
  .bg {
    position: absolute;
-   background-image: url("%PUBLIC_URL%/bg.svg");
+   background-image: url("/bg.svg");
    background-repeat: no-repeat;
    z-index: -1;
    background-color: var(--bg);
