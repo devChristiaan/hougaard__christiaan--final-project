@@ -28,7 +28,7 @@ const Listings = () => {
         getData()
     }, [token])
     return (
-        <div>test</div>
+        <p><a href="/createuser">Register</a></p>
         // <Container>
         //     <Row>
         //         <h1>Listings for user: {user}</h1>

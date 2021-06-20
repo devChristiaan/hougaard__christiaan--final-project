@@ -19,7 +19,7 @@ ul {
   list-style: none;
 }
 
-a, a:visited, a:active {
+a, a:visited, a:active, a:hover {
   text-decoration: none;
   color: var(--white);
 }

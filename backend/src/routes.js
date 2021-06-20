@@ -40,6 +40,7 @@ router.post('/contact_form/entries', validationObj , async (req, res, next) => {
 //Create New User
 router.post('/users', validationUser, async (req, res, next) => {
   //Create ID
+  console.log(req.body);
   let user = createID(req.body)
   //Designate which DB to use
   let db = 'dbUsers'
