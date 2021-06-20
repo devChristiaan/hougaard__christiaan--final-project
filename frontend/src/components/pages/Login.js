@@ -28,7 +28,7 @@ const Login = () => {
         } else {
             sessionStorage.setItem('token', payload.token)
 
-            let { from } = location.state || { from: { pathname: "/listing" } };
+            let { from } = location.state || { from: { pathname: "/submissions" } };
             history.replace(from);
         }
     }
@@ -46,6 +46,7 @@ const Login = () => {
                 <input type="password" name="password" id="passwordEntry" placeholder="Valid password" onChange={e => setPassword(e.target.value)}/>
             <button>Sign in</button>
         </form>
+        <p><a href="/createuser">Register</a></p>
       </>
     )
 }
