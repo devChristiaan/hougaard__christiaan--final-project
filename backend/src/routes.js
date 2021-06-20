@@ -66,7 +66,6 @@ router.post('/auth', validationAuthUser , async (req, res, next) =>{
   const password = req.body.password
   //Designate which DB to use
   const db = 'dbUsers'
-  console.log(email, password);
   try{
     ///Find User in DB
     let user = await findUser(email, password, db)
