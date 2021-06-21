@@ -27,34 +27,28 @@ const Listings = () => {
         }
         getData()
     }, [token])
+
     return (
-        <div>test</div>
-        // <Container>
-        //     <Row>
-        //         <h1>Listings for user: {user}</h1>
-        //     </Row>
-        //     <Table responsive>
-        //         <thead>
-        //             <tr>
-        //             <th>ID</th>
-        //             <th>Name</th>
-        //             <th>Phone Number</th>
-        //             <th>Email</th>
-        //             </tr>
-        //         </thead>
-        //         <tbody>
-        //             {listing.length === 0 &&
-        //                 <tr><td colSpan="4" className="text-center"><i>No listings found</i></td></tr>
-        //             }
-        //             {listing.length > 0 &&
-        //                 listing.map(entry => <tr><td>{entry.id}</td><td>{entry.name}</td><td>{entry.phoneNumber}</td><td>{entry.email}</td></tr>)
-        //             }
-        //         </tbody>
-        //     </Table>
-        // <Row className="my-5">
-        //     <Button onClick={logout} color="primary">Logout</Button>
-        // </Row>
-        // </Container>
+        <>
+        <p><a href="/createuser">Register</a></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {listing.length === 0 &&
+                <tr><td colSpan="4"><i>No listings found</i></td></tr>}
+                {listing.length > 0 &&
+                listing.map(entry => <tr><td>{entry.id}</td><td>{entry.name}</td><td>{entry.phoneNumber}</td><td>{entry.email}</td></tr>)}
+            </tbody>
+        </table>
+        <button onClick={logout} color="primary">Logout</button>
+        </>
     )
 }
 

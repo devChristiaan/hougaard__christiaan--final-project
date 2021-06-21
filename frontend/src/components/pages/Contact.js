@@ -40,13 +40,13 @@ const Contact = () => {
         </section>
         <section className="grid-journey block-left">
             <form onSubmit={formSubmit} name="contactForm">
-                <label htmlFor="name">Full Name</label><span className="error-message" id='nMessage'></span>
+                <label htmlFor="name">Full Name</label><span id='nMessage'></span>
                     <input type="name" name="name" id="nameEntry" required value={name} onChange={e => setName(e.target.value)}/>
-                <label htmlFor="email">Email</label><span className="error-message" id='eMessage'></span>
+                <label htmlFor="email">Email</label><span id='eMessage'></span>
                     <input type="email" name="email" id="emailEntry" required value={email} onChange={e => setEmail(e.target.value) }/>
-                <label htmlFor="name">Phone Number</label><span className="error-message" id='eMessage'></span>
+                <label htmlFor="name">Phone Number</label><span id='eMessage'></span>
                     <input type="phone" name="phone" id="phoneEntry" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)}/>
-                <label htmlFor="message">Message</label><span className="error-message" id='mMessage'></span>
+                <label htmlFor="message">Message</label><span id='mMessage'></span>
                     <input type="textarea" name="text" id="messageEntry" required value={content} onChange={e => setContent(e.target.value)}/>
                 <button type="submit" value="Send" className="form-btn">Send</button>
             </form>

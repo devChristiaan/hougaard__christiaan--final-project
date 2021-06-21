@@ -10,6 +10,7 @@ import Contact from './components/pages/Contact'
 import Login from './components/pages/Login'
 import Listing from './components/pages/Listing'
 import PrivateRoute from './components/shared/PrivateRoute'
+import CreateUser from "./components/pages/CreateUser"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/login" component={Login} />
+          <Route exact path="/createuser" component={CreateUser} />
           <PrivateRoute path="/submissions">
             <Listing />
           </PrivateRoute>
