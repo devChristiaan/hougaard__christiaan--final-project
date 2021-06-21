@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
 import Logo from "../shared/logo"
+import parseJwt from '../../helpers/authHelper'
 
 const CreateUser = () => {
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
     const [email, setEmail] = useState("")
+    const token = sessionStorage.getItem('token')
+    const user = parseJwt(token).username
 
     const userSubmit = async event => {
         
@@ -16,10 +19,10 @@ const CreateUser = () => {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*',
                 'Access-Control-Allow-Methods': 'POST',
-                'Authorization': 'Bearer ' + sessionStorage.getItem('token')
+                'Authorization': `Bearer ${token}`
               },
             body: JSON.stringify({username, password, email})
-        })
+        }, [token])
         const payload = await response.json()
         if (response.status >= 400) {
             
