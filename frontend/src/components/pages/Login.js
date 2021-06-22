@@ -25,6 +25,10 @@ const Login = () => {
         const payload = await response.json()
         if (response.status >= 400) {
             setAuth(false)
+            setPassword("")
+            setInterval( ()=> {
+                setAuth(true)
+            }, 4000)
         } else {
             sessionStorage.setItem('token', payload.token)
 
@@ -36,15 +40,18 @@ const Login = () => {
     return (
       <>
         <Logo />
+        <section className='grid-graphic-resume'>
+            <img src="/laptop.svg" alt="Laptop Illustration" className="laptop"/>
+        </section>
+        <form onSubmit={loginSubmit} className="grid-home">
         {!auth && 
-            <p>Invalid credentials, please try again</p>
+            <p className="error-message">Invalid credentials, please try again</p>
         }
-        <form onSubmit={loginSubmit}>
             <label htmlFor="emailEntry">Email</label>
                 <input type="email" name="email" id="emailEntry" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)}/>
             <label htmlFor="passwordEntry">Password</label>
                 <input type="password" name="password" id="passwordEntry" placeholder="Valid password" onChange={e => setPassword(e.target.value)}/>
-            <button>Sign in</button>
+            <button className="form-btn">Sign in</button>
         </form>
       </>
     )
