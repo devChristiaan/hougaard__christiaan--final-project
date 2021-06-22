@@ -40,16 +40,23 @@ const CreateUser = () => {
     return (
       <>
       <Logo />
-        <form onSubmit={userSubmit}>
-        {!error && 
-            <p className="error-message grid-title-resume flex">Unable to create user! Password must be a minimum of 8 characters and you need a valid email address.</p>
+      <section className='grid-graphic-resume'>
+            <img src="/finance.svg" alt="Fiance Computer" className="wireframe"/>
+        </section>
+        
+        <form onSubmit={userSubmit} className="grid-journey block-left">
+        {!error &&
+            <div className="error-message grid-errormessage">
+                <p>Unable to create user!</p>
+            </div>
         }
+        
             <label htmlFor="usernameEntry">Username</label>
                 <input type="text" name="name" id="usernameEntry" placeholder="Username" value={name} onChange={e => setUsername(e.target.value)}/>
             <label htmlFor="emailEntry">Email</label>
                 <input type="email" name="email" id="emailEntry" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)}/>
             <label htmlFor="passwordEntry">Password</label>
-                <input type="password" name="password" id="passwordEntry" placeholder="Valid password" value={password} onChange={e => setPassword(e.target.value)}/>
+                <input type="password" name="password" id="passwordEntry" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)}/>
             <button className="form-btn">Create User</button>
         </form>
       </>
