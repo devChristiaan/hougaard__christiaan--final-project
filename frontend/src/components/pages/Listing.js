@@ -31,13 +31,13 @@ const Listings = () => {
     return (
         <>
         <p><a href="/createuser">Register</a></p>
-        <table>
-            <thead>
+        <table className="grid-table">
+            <thead className='table-head'>
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
                     <th>Phone Number</th>
-                <th>Email</th>
+                    <th>Email</th>
                 </tr>
             </thead>
             <tbody>
@@ -47,7 +47,7 @@ const Listings = () => {
                 listing.map(entry => <tr><td>{entry.id}</td><td>{entry.name}</td><td>{entry.phoneNumber}</td><td>{entry.email}</td></tr>)}
             </tbody>
         </table>
-        <button onClick={logout} color="primary">Logout</button>
+        <button onClick={logout} className="form-btn">Logout</button>
         </>
     )
 }

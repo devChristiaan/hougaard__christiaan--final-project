@@ -28,7 +28,7 @@ const Login = () => {
         } else {
             sessionStorage.setItem('token', payload.token)
 
-            let { from } = location.state || { from: { pathname: "/submissions" } };
+            let { from } = location.state || { from: { pathname: "/" } };
             history.replace(from);
         }
     }
@@ -36,23 +36,15 @@ const Login = () => {
     return (
       <>
         <Logo />
-        <section className='grid-title-resume flex'>
-            <div className="line"></div>
-            <h1 className="lift">Login</h1>
-            <div className="line"></div>
-        </section>
-        <section className='grid-graphic-resume'>
-            <img src="/laptop.svg" alt="Laptop Illustration" className="laptop"/>
-        </section>
-        <form onSubmit={loginSubmit} className="grid-journey block-left">
         {!auth && 
-            <p className="error-message grid-title-resume flex">Invalid credentials, please try again!</p>
+            <p>Invalid credentials, please try again</p>
         }
+        <form onSubmit={loginSubmit}>
             <label htmlFor="emailEntry">Email</label>
                 <input type="email" name="email" id="emailEntry" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)}/>
             <label htmlFor="passwordEntry">Password</label>
                 <input type="password" name="password" id="passwordEntry" placeholder="Valid password" onChange={e => setPassword(e.target.value)}/>
-            <button className="form-btn">Sign in</button>
+            <button>Sign in</button>
         </form>
       </>
     )
