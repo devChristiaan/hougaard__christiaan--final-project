@@ -30,7 +30,6 @@ const Listings = () => {
 
     return (
         <>
-        <p><a href="/createuser">Register</a></p>
         <table className="grid-table">
             <thead className='table-head'>
                 <tr>
@@ -47,7 +46,9 @@ const Listings = () => {
                 listing.map(entry => <tr><td>{entry.id}</td><td>{entry.name}</td><td>{entry.phoneNumber}</td><td>{entry.email}</td></tr>)}
             </tbody>
         </table>
-        <button onClick={logout} className="form-btn">Logout</button>
+        <button className="btn-logout"><a href="/createuser">Register</a></button>
+        <button onClick={logout} className="btn-logout">Logout</button>
+        
         </>
     )
 }

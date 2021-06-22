@@ -55,6 +55,10 @@
  .grid-nav {
    grid-column: 1 / 9;
  }
+
+ .grid-ogout {
+  grid-column: 9 / 12;
+}
  
  .grid-logo {
    grid-column: 9 / 13;
@@ -192,6 +196,22 @@
    width: 35rem;
    border-style: none;
  }
+
+ .btn-logout, .btn-logout:focus, .btn-logout:focus-visible{
+  display: inline-block;
+  color: var(--white);
+  text-align: center;
+  position: relative;
+  left: 18rem;
+  height: 4rem;
+  font-size: 2rem;
+  padding: .4rem 1.3rem 1.3rem 1.3rem;
+  margin: 1.6rem 1.3rem 1.3rem 2rem;
+  background-color: var(--primary);
+  border-radius: 20px;
+  width: 10rem;
+  border-style: none;
+}
  
  /* Main Content */
  /*///////////////////////*/
@@ -331,12 +351,14 @@ table {
 
 tr > th {
   padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
   width: 40rem;
  }
 
 tr > td {
 padding-bottom: 1.5rem;
 padding-top: .5rem;
+padding-left: 1.5rem;
 width: 40rem;
 font-size: 1.8rem;
 border-bottom: 1px solid var(--grey);
