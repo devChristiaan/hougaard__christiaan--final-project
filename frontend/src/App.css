@@ -37,8 +37,9 @@
    background-color: var(--red);
    border: 1px solid var(--red);
    border-radius: 5px;
-   width: 10rem;
-   height: 15rem;
+   width: 38rem;
+   height: 5rem;
+   text-align: center;
  }
  
  /* Grid Elements */
