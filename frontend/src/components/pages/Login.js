@@ -32,7 +32,7 @@ const Login = () => {
         } else {
             sessionStorage.setItem('token', payload.token)
 
-            let { from } = location.state || { from: { pathname: "/" } };
+            let { from } = location.state || { from: { pathname: "/submissions" } };
             history.replace(from);
         }
     }
