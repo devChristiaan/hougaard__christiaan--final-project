@@ -12,4 +12,6 @@ This is the third part of the course project which combines the frontend and bac
 
 #Frontend Instructions
 
-1. Insdie the Fackened folder run `npm install` to install all dependencies for the react project.
+1. Insdie the Frontend folder run `npm install` to install all dependencies for the react project.
+
+2. The default login details Email: address@mail.com and the password: somepassword.
