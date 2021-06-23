@@ -24,6 +24,10 @@ const Contact = () => {
             alert(`Oops! Error: ${payload.message} for fields: ${payload.invalid.join(",")}`)
         } else {
             alert(`Congrats! Submission submitted with id: ${payload.id}`)
+            setName("")
+            setEmail("")
+            setPhoneNumber("")
+            setContent("")
         }
     }
 

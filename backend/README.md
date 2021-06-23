@@ -7,9 +7,7 @@ This is the second part of the course project which will contain a RESTful JSON 
 
 2. Rename the `.envRename` file to just `.env`. This will allow access to the sercet code for jwt, the port number, as well as the DataBase paths.
 
-3. Create a folder called `data` in the root folder.
-
-4. Confirm that you want to run the application on the default port `3000`. The default can be changed in the `.env` file. Locate the port variable on line 1 and set the port to whatever port you have free on your system. If somonething goes wrong the apllication will default to port `9000`.
+4. Confirm that you want to run the application on the default port `4000`. The default can be changed in the `.env` file. Locate the port variable on line 1 and set the port to whatever port you have free on your system. If somonething goes wrong the apllication will default to port `9000`.
 
 ## Instructions
 
