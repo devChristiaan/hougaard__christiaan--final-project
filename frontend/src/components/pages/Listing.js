@@ -12,7 +12,7 @@ const Listings = () => {
     const logout = event => {
         event.preventDefault()
         sessionStorage.removeItem('token')
-        history.push("/login")
+        history.push("/")
     }
     useEffect(() => {
         const getData = async () => {

@@ -10,8 +10,8 @@ This is the third part of the course project which combines the frontend and bac
 
 3. Confirm that you want to run the application on the default port `4000`. The default can be changed in the `.env` file. Locate the port variable on line 1 and set the port to whatever port you have free on your system. If somonething goes wrong the apllication will default to port `9000`.
 
-#Frontend Instructions
+#Frontend_Instructions
 
 1. Inside the Frontend folder run `npm install` to install all dependencies for the react project.
 
-2. The default login details Email: address@mail.com and the password: somepassword.
+2. The default login is - Email: address@mail.com and the password: somepassword.
