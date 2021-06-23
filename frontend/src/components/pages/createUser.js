@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { useHistory, useLocation } from 'react-router-dom'
 import Logo from "../shared/logo"
-import parseJwt from '../../helpers/authHelper'
 
 const CreateUser = () => {
     let history = useHistory();
@@ -11,7 +10,6 @@ const CreateUser = () => {
     const [password, setPassword] = useState("")
     const [email, setEmail] = useState("")
     const token = sessionStorage.getItem('token')
-    const user = parseJwt(token).username
 
     const userSubmit = async event => {
         

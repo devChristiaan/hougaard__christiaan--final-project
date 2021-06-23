@@ -4,7 +4,7 @@ This is the third part of the course project which combines the frontend and bac
 **Note** Please follow the requiremnts before running any commands to make sure all dependencies have been installed and that the Environments are set up correctly.
 
 #Backend_Instructions
-1. Insdie the Backened folder run `npm install` to install all dependencies for the project api.
+1. Inside the Backened folder run `npm install` to install all dependencies for the project api.
 
 2. Rename the `.envRename` file to just `.env`. This will allow access to the sercet code for jwt, the port number, as well as the DataBase paths.
 
@@ -12,6 +12,6 @@ This is the third part of the course project which combines the frontend and bac
 
 #Frontend Instructions
 
-1. Insdie the Frontend folder run `npm install` to install all dependencies for the react project.
+1. Inside the Frontend folder run `npm install` to install all dependencies for the react project.
 
 2. The default login details Email: address@mail.com and the password: somepassword.
