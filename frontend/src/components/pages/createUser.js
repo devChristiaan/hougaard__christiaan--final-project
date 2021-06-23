@@ -50,7 +50,6 @@ const CreateUser = () => {
                 <p>Unable to create user!</p>
             </div>
         }
-        
             <label htmlFor="usernameEntry">Username</label>
                 <input type="text" name="name" id="usernameEntry" placeholder="Username" value={name} onChange={e => setUsername(e.target.value)}/>
             <label htmlFor="emailEntry">Email</label>
