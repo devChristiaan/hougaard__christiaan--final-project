@@ -58,7 +58,7 @@
    grid-column: 1 / 9;
  }
 
- .grid-ogout {
+ .grid-logout {
   grid-column: 9 / 12;
 }
  
@@ -110,7 +110,7 @@
  }
 
  .grid-table {
-  grid-column: 6 / 12;
+  grid-column: 5 / 12;
   grid-row: 3;
 }
  /* Background Elements */
@@ -349,7 +349,7 @@
  /*///////////////////////*/
 
 table {
-  margin-top: 4.5rem;
+  margin-top: 8rem;
 }
 
 .table-head {
