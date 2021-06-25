@@ -14,4 +14,4 @@ This is the third part of the course project which combines the frontend and bac
 
 1. Inside the Frontend folder run `npm install` to install all dependencies for the react project.
 
-2. The default login is - Email: address@mail.com and the password: somepassword.
+2. The default login is Email: `address@mail.com` and the password: `somepassword`.
